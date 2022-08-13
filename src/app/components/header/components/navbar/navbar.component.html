@@ -1,0 +1,26 @@
+<div class="relative">
+  <span
+    class="align-super hamburger hamburger--minus"
+    [ngClass]="{ 'is-active': navbarOpen }"
+    (click)="toggleNavbar()"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </span>
+  <div *ngIf="this.navbarOpen !== undefined" class="relative z-10">
+    <ul
+      class="pt-3 absolute left-[100%] translate-x-[-100%] transform w-screen text-white font-light text-center text-2xl"
+      [ngClass]="{
+        'animate-menuDropdownIn': navbarOpenAnimation,
+        'animate-menuDropdownOut': navbarCloseAnimation
+      }"
+    >
+      <li class="menuItemStyle">Home</li>
+      <li class="menuItemStyle">Me</li>
+      <li class="menuItemStyle">Projects</li>
+      <li class="menuItemStyle">Contact</li>
+      <li class="menuItemStyle">day/night shit</li>
+    </ul>
+  </div>
+</div>
