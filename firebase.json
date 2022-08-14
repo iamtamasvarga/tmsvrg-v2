@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "target": "tmsvrg-v2",
-    "public": "dist",
+    "public": "dist/tmsvrg-v2",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
