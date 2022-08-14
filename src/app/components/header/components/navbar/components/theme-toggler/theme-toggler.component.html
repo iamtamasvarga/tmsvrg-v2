@@ -1,6 +1,6 @@
 <label class="bg-black rounded-full flex items-center justify-between p-1 relative h-8 w-16">
-  <input type="checkbox" class="peer absolute opacity-0" />
+  <input type="checkbox" [checked]="darkMode" (change)="checkBoxChange($event)" class="peer absolute opacity-0" />
   <hero-icon name="sun" type="outline" class="h-6 text-yellow-400"></hero-icon>
-  <hero-icon name="moon" type="outline" class="h-6 text-white"></hero-icon>
+  <hero-icon name="moon" type="outline" class="h-6 text-yellow-600"></hero-icon>
   <div class="absolute h-6 w-6 rounded-full bg-white translate-x-0 transition ease-linear duration-200 peer-checked:translate-x-8"></div>
 </label>

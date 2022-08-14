@@ -4,9 +4,22 @@
 
 @layer components {
   .page {
-    @apply flex-none h-full bg-black;
+    @apply flex-none h-full dark:bg-black;
   }
+  
   .menuItemStyle {
-    @apply py-3 bg-orange-500;
+    @apply py-3 dark:bg-orange-500;
+  }
+
+  .bg-colors {
+    @apply bg-blue-300 dark:bg-orange-500;
+  }
+  
+  .txt-primary-colors {
+    @apply text-blue-300 dark:text-orange-500;
+  }
+
+  .bg-headers {
+    @apply bg-blue-300 dark:bg-black;
   }
 }
