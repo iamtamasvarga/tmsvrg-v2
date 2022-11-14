@@ -2,6 +2,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MainLayoutComponent } from '@layouts/main-layout/main-layout.component';
+import { MeComponent } from '@pages/me/me.component';
 
 //libraries
 import { menu, HeroIconModule, allIcons } from 'ng-heroicon';
@@ -23,6 +25,8 @@ import { HomeComponent } from './pages/home/home.component';
     HomeComponent,
     NavbarComponent,
     ThemeTogglerComponent,
+    MainLayoutComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,

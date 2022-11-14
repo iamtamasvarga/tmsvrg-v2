@@ -4,7 +4,7 @@
 
 @layer components {
   .page {
-    @apply flex-none h-full dark:bg-black;
+    @apply flex-none h-full bg-blue-200 dark:bg-black;
   }
   
   .menuItemStyle {

@@ -17,11 +17,13 @@
       }"
     >
       <ul class="h-full flex flex-col">
-        <li class="menuItemStyle">Home</li>
-        <li class="menuItemStyle">Me</li>
+        <li class="menuItemStyle" (click)="goTo('/home')">Home</li>
+        <li class="menuItemStyle" (click)="goTo('/me')">Me</li>
         <li class="menuItemStyle">Projects</li>
         <li class="menuItemStyle">Contact</li>
-        <li class="menuItemStyle mt-auto self-center"><app-theme-toggler></app-theme-toggler></li>
+        <li class="menuItemStyle mt-auto self-center">
+          <app-theme-toggler></app-theme-toggler>
+        </li>
       </ul>
     </div>
   </div>

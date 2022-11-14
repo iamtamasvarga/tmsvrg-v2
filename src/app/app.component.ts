@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeSwitcherService } from '@services/theme-switcher.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tmsvrg-v2';
+
+  constructor(private themeSwitcher: ThemeSwitcherService)
+  {
+  }
+
 }
