@@ -1,4 +1,4 @@
-<div class="relative">
+<div class="relative z-20">
   <span
     class="align-super hamburger hamburger--minus"
     [ngClass]="{ 'is-active': navbarOpen }"
@@ -17,10 +17,10 @@
       }"
     >
       <ul class="h-full flex flex-col">
-        <li class="menuItemStyle" (click)="goTo('/home')">Home</li>
-        <li class="menuItemStyle" (click)="goTo('/me')">Me</li>
-        <li class="menuItemStyle">Projects</li>
-        <li class="menuItemStyle">Contact</li>
+        <li class="menuItemStyle"><div (click)="goTo('/home')">Home</div></li>
+        <li class="menuItemStyle"><div (click)="goTo('/me')">Me</div></li>
+        <li class="menuItemStyle"><div (click)="goTo('/projects')">Projects</div></li>
+        <li class="menuItemStyle"><div (click)="goTo('/contact')">Contact</div></li>
         <li class="menuItemStyle mt-auto self-center">
           <app-theme-toggler></app-theme-toggler>
         </li>

@@ -4,9 +4,13 @@
 
 @layer components {
   .page {
-    @apply flex-none h-full bg-blue-200 dark:bg-black;
+    @apply flex-none h-full bg-blue-200 dark:bg-black text-black dark:text-white;
   }
-  
+
+  .page-text {
+    @apply w-full font-sourceCodePro font-light text-xl text-center text-black dark:text-white;
+  }
+
   .menuItemStyle {
     @apply py-3 dark:bg-orange-500;
   }
@@ -14,12 +18,17 @@
   .bg-colors {
     @apply bg-blue-300 dark:bg-orange-500;
   }
-  
+
   .txt-primary-colors {
     @apply text-blue-300 dark:text-orange-500;
   }
 
   .bg-headers {
     @apply bg-blue-300 dark:bg-black;
+  }
+
+  .pages {
+    @apply pattern-zigzag-3d pattern-blue-300 pattern-bg-white
+    pattern-size-16 pattern-opacity-20 dark:pattern-orange-500 dark:pattern-bg-black dark:pattern-opacity-60;
   }
 }

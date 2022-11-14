@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: ["./src/**/*.{html,ts}"],
   important: true,
   theme: {
@@ -37,8 +37,10 @@ module.exports = {
       animation: {
         glow: "glowAnimation 5s alternate infinite linear",
         fontGlow: "fontGlowAnimation 5s alternate infinite linear",
-        menuDropdownIn: "menuDropdownInAnimation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
-        menuDropdownOut: "menuDropdownOutAnimation 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        menuDropdownIn:
+          "menuDropdownInAnimation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        menuDropdownOut:
+          "menuDropdownOutAnimation 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       backgroundSize: {
         animationSize: "400%",
@@ -54,5 +56,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-bg-patterns")],
 };
